@@ -38,13 +38,93 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/content/index-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
+	"/dev/content/menu-and-flavors-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/menu-and-flavors-content.html",
+		"oF": 0
+		},
+	"/dev/content/order-online-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/order-online-content.html",
+		"oF": 0
+		},
+	"/dev/content/our-history-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/our-history-content.html",
+		"oF": 0
+		},
+	"/dev/content/visit-us-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/visit-us-content.html",
+		"oF": 0
+		},
+	"/dev/global/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/footer.html",
+		"oF": 0
+		},
+	"/dev/global/head.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/head.html",
+		"oF": 0
+		},
+	"/dev/global/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/global/header.html",
+		"oF": 0
+		},
+	"/dev/global/main-nav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/global/main-nav.html",
+		"oF": 0
+		},
+	"/dev/global/scripts.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/scripts.html",
+		"oF": 0
+		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/deploy/index.html",
+		"oF": 2
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -56,6 +136,30 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/menu-and-flavors.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/menu-and-flavors.html",
+		"oF": 2
+		},
+	"/dev/order-online.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/order-online.html",
+		"oF": 2
+		},
+	"/dev/our-history.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/our-history.html",
+		"oF": 2
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -187,7 +291,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/_section-1.scss": {
+	"/dev/scss/sections/_index-content.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -195,7 +299,59 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-1.css",
+		"oAP": "/dev/scss/sections/_index-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_menu-and-flavors-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_menu-and-flavors-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_order-online-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_order-online-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_our-history-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_our-history-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_visit-us-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_visit-us-content.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -208,18 +364,18 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/dev/scss/styles.css",
-		"oF": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/section-1.kit": {
+	"/dev/visit-us.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-1.html",
-		"oF": 0
+		"oA": 0,
+		"oAP": "/deploy/visit-us.html",
+		"oF": 2
 		}
 	},
 "hooks": [
