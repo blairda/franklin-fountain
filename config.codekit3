@@ -19,6 +19,28 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/FranklinFountainLogo_Maroon.png": {
+		"ft": 32768,
+		"iS": 33466,
+		"oA": 0,
+		"oAP": "/deploy/img/FranklinFountainLogo_Maroon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/FranklinFountainLogo_White.png": {
+		"ft": 32768,
+		"iS": 32744,
+		"oA": 0,
+		"oAP": "/deploy/img/FranklinFountainLogo_White.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -37,6 +59,38 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/deploy/menu-and-flavors.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/menu-and-flavors.html",
+		"oF": 0
+		},
+	"/deploy/order-online.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/order-online.html",
+		"oF": 0
+		},
+	"/deploy/our-history.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/our-history.html",
+		"oF": 0
+		},
+	"/deploy/visit-us.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/visit-us.html",
+		"oF": 0
 		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
