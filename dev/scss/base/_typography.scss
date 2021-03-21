@@ -9,6 +9,8 @@
 
 body{
     font-family: 'Lora', serif;
+    font-size: rem-calc(16);
+    color: $text-maroon;
 }
 
 h1,h2,h3,h4{
@@ -19,6 +21,20 @@ h1,h2,h3,h4{
 p{
     margin: 0;
     padding: 0;
+}
+
+.body{
+    font-size: rem-calc(16);
+    line-height: rem-calc(26);
+}
+
+.quote{
+    font-style: italic;
+    font-weight: 500;
+    font-size: rem-calc(18);
+    line-height: rem-calc(28);
+    color: $text-blue;
+    text-align: center;
 }
 
 .order-online{

@@ -327,11 +327,29 @@ ul {
   ul li {
     list-style: none; }
 
+.main-grid {
+  display: grid;
+  grid-template-areas: ". content .";
+  grid-template-columns: 15px auto 15px; }
+  @media (min-width: 768px) {
+    .main-grid {
+      grid-template-columns: 40px auto 40px; } }
+  @media (min-width: 992px) {
+    .main-grid {
+      grid-template-columns: 5% auto 5%; } }
+  @media (min-width: 1200px) {
+    .main-grid {
+      grid-template-columns: auto 1200px auto; } }
+  .main-grid > div {
+    grid-area: content; }
+
 /* =============
     Typography
 ============= */
 body {
-  font-family: 'Lora', serif; }
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #1A0F01; }
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -340,6 +358,18 @@ h1, h2, h3, h4 {
 p {
   margin: 0;
   padding: 0; }
+
+.body {
+  font-size: 1rem;
+  line-height: 1.625rem; }
+
+.quote {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #4C779B;
+  text-align: center; }
 
 .order-online {
   font-family: 'Miltonian Tattoo', cursive;
@@ -398,9 +428,50 @@ textarea {
 /* =============
     Navigation
 ============= */
+#main-nav > div {
+  display: grid;
+  grid-template-areas: "order menu" "visit history";
+  grid-template-columns: auto auto;
+  text-align: center; }
+  @media (min-width: 992px) {
+    #main-nav > div {
+      grid-template-areas: "order menu visit history";
+      grid-template-columns: auto auto auto auto; } }
+  #main-nav > div .order-online {
+    grid-area: order;
+    margin: 10%; }
+  #main-nav > div .menu-flavors {
+    grid-area: menu;
+    margin: 10%; }
+  #main-nav > div .visit-us {
+    grid-area: visit;
+    margin: 10%; }
+  #main-nav > div .our-history {
+    grid-area: history;
+    margin: 10%; }
+
 /* =============
     Header
 ============= */
+#main-header {
+  background-color: #732B2B; }
+  #main-header img {
+    width: 70%;
+    padding: 4%;
+    display: block;
+    margin: auto; }
+    @media (min-width: 768px) {
+      #main-header img {
+        width: 55%;
+        padding: 2%; } }
+    @media (min-width: 992px) {
+      #main-header img {
+        width: 45%;
+        padding: 2%; } }
+    @media (min-width: 1200px) {
+      #main-header img {
+        width: 35%;
+        padding: 1%; } }
 /* =============
     Footer
 ============= */
@@ -449,6 +520,10 @@ textarea {
       grid-template-areas: "order menu" "visit history";
       grid-template-columns: auto auto;
       text-align: center; }
+      @media (min-width: 992px) {
+        #index-content #index-pages > div {
+          grid-template-areas: "order menu visit history";
+          grid-template-columns: auto auto auto auto; } }
       #index-content #index-pages > div .order-online {
         grid-area: order;
         margin: 10%; }
