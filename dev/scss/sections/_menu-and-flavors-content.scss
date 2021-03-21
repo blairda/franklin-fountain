@@ -1,3 +1,97 @@
 #menu-flavors{
+    ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "vanillabean-pistachio chocolate"
+        "vanillabean-pistachio banana-peanutbutter"
+        "coffee-butterpecan banana-peanutbutter"
+        "coffee-butterpecan hydroxcookie"
+        "franklinmintchip franklinmintchip"
+        "blackraspberry-chocolatechip blackraspberry-chocolatechip"
+        "blackraspberry-chocolatechip blackraspberry-chocolatechip"
+        "coconut greentea-rumraisin"
+        "strawberry greentea-rumraisin"
+        "peach-cottoncandy rockyroad"
+        "peach-cottoncandy rockyroad"
+        "maplewalnut-teaberrygum maplewalnut-teaberrygum"
+        "maplewalnut-teaberrygum maplewalnut-teaberrygum";
 
+        @include md{
+            // gap: 1.5%;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: "vanillabean-pistachio franklinmintchip franklinmintchip"
+            "vanillabean-pistachio banana-peanutbutter hydroxcookie"
+            "chocolate banana-peanutbutter coffee-butterpecan"
+            "blackraspberry-chocolatechip blackraspberry-chocolatechip coffee-butterpecan"
+            "blackraspberry-chocolatechip blackraspberry-chocolatechip greentea-rumraisin"
+            "peach-cottoncandy coconut greentea-rumraisin"
+            "peach-cottoncandy strawberry rockyroad"
+            "maplewalnut-teaberrygum maplewalnut-teaberrygum ."
+            "maplewalnut-teaberrygum maplewalnut-teaberrygum .";
+        }
+
+        @include lg{
+            // gap: 2%;
+            // border: red solid 1px;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas: "vanillabean-pistachio franklinmintchip franklinmintchip hydroxcookie coffee-butterpecan"
+            "vanillabean-pistachio banana-peanutbutter blackraspberry-chocolatechip blackraspberry-chocolatechip coffee-butterpecan"
+            "chocolate banana-peanutbutter blackraspberry-chocolatechip blackraspberry-chocolatechip greentea-rumraisin"
+            "maplewalnut-teaberrygum maplewalnut-teaberrygum peach-cottoncandy coconut greentea-rumraisin"
+            "maplewalnut-teaberrygum maplewalnut-teaberrygum peach-cottoncandy strawberry rockyroad";
+        }
+        
+        li:nth-child(1) {
+            grid-area: vanillabean-pistachio;
+        }
+
+        li:nth-child(2) {
+            grid-area: chocolate;
+        }
+
+        li:nth-child(3) {
+            grid-area: coffee-butterpecan;
+        }
+
+        li:nth-child(4) {
+            grid-area: banana-peanutbutter;
+        }
+
+        li:nth-child(5) {
+            grid-area: hydroxcookie;
+        }
+
+        li:nth-child(6) {
+            grid-area: franklinmintchip;
+        }
+
+        li:nth-child(7) {
+            grid-area: blackraspberry-chocolatechip;
+        }
+
+        li:nth-child(8) {
+            grid-area: coconut;
+        }
+
+        li:nth-child(9) {
+            grid-area: strawberry;
+        }
+
+        li:nth-child(10) {
+            grid-area: greentea-rumraisin;
+        }
+
+        li:nth-child(11) {
+            grid-area: peach-cottoncandy;
+        }
+
+        li:nth-child(12) {
+            grid-area: rockyroad;
+            align-self: center;
+        }
+
+        li:nth-child(13) {
+            grid-area: maplewalnut-teaberrygum;
+        }
+    }
 }  
