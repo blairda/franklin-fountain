@@ -20,3 +20,51 @@ p{
     margin: 0;
     padding: 0;
 }
+
+.order-online{
+    font-family: 'Miltonian Tattoo', cursive;
+    color: $text-teal;
+    font-size: rem-calc(35);
+    line-height: rem-calc(45);
+
+    @include md{
+        font-size: rem-calc(56);
+        line-height: rem-calc(70);
+    }
+}
+
+.menu-flavors{
+    font-family: 'Rye', cursive;
+    color: $text-red;
+    font-size: rem-calc(35);
+    line-height: rem-calc(44);
+
+    @include md{
+        font-size: rem-calc(56);
+        line-height: rem-calc(70);
+    }
+}
+
+.visit-us{
+    font-family: 'Ewert', cursive;
+    color: $text-green;
+    font-size: rem-calc(35);
+    line-height: rem-calc(44);
+
+    @include md{
+        font-size: rem-calc(56);
+        line-height: rem-calc(70);
+    }
+}
+
+.our-history{
+    font-family: 'Sancreek', cursive;
+    color: $text-gold;
+    font-size: rem-calc(35);
+    line-height: rem-calc(45);
+
+    @include md{
+        font-size: rem-calc(56);
+        line-height: rem-calc(72);
+    }
+}
