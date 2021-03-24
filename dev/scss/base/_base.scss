@@ -14,20 +14,11 @@ ul{
     }
 }
 
-// .main-grid{
-//     margin-left: 2%;
-//     margin-right: 2%;
-//     display: grid;
-//     grid-area: ". content .";
-
-//     @include lg{
-//         grid-template-columns: auto 1000px auto;
-
-//         >div{
-//             grid-area: content;
-//         }
-//     }
-// }
+a{
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.25s;
+}
 
 .main-grid {
     display: grid;

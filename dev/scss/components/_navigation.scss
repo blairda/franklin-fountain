@@ -14,23 +14,19 @@
             grid-template-columns: auto auto auto auto;
         }
         
-        .order-online{
-            grid-area: order;
+        .order-online {
             margin: 10%;
         }
 
-        .menu-flavors{
-            grid-area: menu;
+        .menu-flavors {
             margin: 10%;
         }
 
-        .visit-us{
-            grid-area: visit;
+        .visit-us {
             margin: 10%;
         }
 
-        .our-history{
-            grid-area: history;
+        .our-history {
             margin: 10%;
         }
     }

@@ -1,3 +1,70 @@
 /* =============
     Footer
 ============= */
+footer {
+    background-color: $maroon;
+    height: 10%;
+
+    ul {
+        align-items: center;
+        display: flex;
+        padding: 1%;
+
+        img {
+            padding: 5% 0 5% 5%;
+            width: 75%;
+
+            @include md {
+                padding: 2% 0 2% 2%;
+                width: 55%;
+            }
+
+            @include lg {
+                padding: 2% 0 2% 2%;
+                width: 45%;
+            }
+
+            @include xl {
+                padding: 2% 0 2% 2%;
+                width: 35%;
+            }
+        }
+
+        @include md {
+            padding: 2%;
+        }
+
+        @include lg {
+            padding: 2%;
+        }
+
+        @include xl {
+            padding: 2%;
+        }
+
+        li {
+            margin: 0 10px;
+
+            a:link,
+            a:visited {
+                color: $light-gold;
+                font-size: rem-calc(16);
+
+                &:hover,
+                &:active {
+                    color: $gold;
+                }
+
+                @include md {
+                    font-size: rem-calc(24);
+                    margin: 0 15px;
+                }
+
+                @include lg {
+                    font-size: rem-calc(32);
+                    margin: 0 25px;
+                }
+            }
+        }
+    }
+}

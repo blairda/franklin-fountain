@@ -84,3 +84,59 @@ p{
         line-height: rem-calc(72);
     }
 }
+
+.order-online {
+    grid-area: order;
+
+    a:link,
+    a:visited {
+        color: $text-teal;
+
+        &:hover,
+        &:active {
+            color: $teal;
+        }
+    }
+}
+
+.menu-flavors {
+    grid-area: menu;
+
+    a:link,
+    a:visited {
+        color: $text-red;
+
+        &:hover,
+        &:active {
+            color: $red;
+        }
+    }
+}
+
+.visit-us {
+    grid-area: visit;
+
+    a:link,
+    a:visited {
+        color: $text-green;
+
+        &:hover,
+        &:active {
+            color: $green;
+        }
+    }
+}
+
+.our-history {
+    grid-area: history;
+
+    a:link,
+    a:visited {
+        color: $text-gold;
+
+        &:hover,
+        &:active {
+            color: $gold;
+        }
+    }
+}

@@ -327,6 +327,11 @@ ul {
   ul li {
     list-style: none; }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.25s; }
+
 .main-grid {
   display: grid;
   grid-template-areas: ". content .";
@@ -407,6 +412,46 @@ p {
     .our-history {
       font-size: 3.5rem;
       line-height: 4.5rem; } }
+.order-online {
+  grid-area: order; }
+  .order-online a:link,
+  .order-online a:visited {
+    color: #4D807B; }
+    .order-online a:link:hover, .order-online a:link:active,
+    .order-online a:visited:hover,
+    .order-online a:visited:active {
+      color: #78ACA7; }
+
+.menu-flavors {
+  grid-area: menu; }
+  .menu-flavors a:link,
+  .menu-flavors a:visited {
+    color: #BD5151; }
+    .menu-flavors a:link:hover, .menu-flavors a:link:active,
+    .menu-flavors a:visited:hover,
+    .menu-flavors a:visited:active {
+      color: #CC7777; }
+
+.visit-us {
+  grid-area: visit; }
+  .visit-us a:link,
+  .visit-us a:visited {
+    color: #7F9058; }
+    .visit-us a:link:hover, .visit-us a:link:active,
+    .visit-us a:visited:hover,
+    .visit-us a:visited:active {
+      color: #AABB82; }
+
+.our-history {
+  grid-area: history; }
+  .our-history a:link,
+  .our-history a:visited {
+    color: #B38646; }
+    .our-history a:link:hover, .our-history a:link:active,
+    .our-history a:visited:hover,
+    .our-history a:visited:active {
+      color: #D7AE75; }
+
 /* =============
     Buttons
 ============= */
@@ -438,16 +483,12 @@ textarea {
       grid-template-areas: "order menu visit history";
       grid-template-columns: auto auto auto auto; } }
   #main-nav > div .order-online {
-    grid-area: order;
     margin: 10%; }
   #main-nav > div .menu-flavors {
-    grid-area: menu;
     margin: 10%; }
   #main-nav > div .visit-us {
-    grid-area: visit;
     margin: 10%; }
   #main-nav > div .our-history {
-    grid-area: history;
     margin: 10%; }
 
 /* =============
@@ -475,35 +516,82 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #732B2B;
+  height: 10%; }
+  footer ul {
+    align-items: center;
+    display: flex;
+    padding: 1%; }
+    footer ul img {
+      padding: 5% 0 5% 5%;
+      width: 75%; }
+      @media (min-width: 768px) {
+        footer ul img {
+          padding: 2% 0 2% 2%;
+          width: 55%; } }
+      @media (min-width: 992px) {
+        footer ul img {
+          padding: 2% 0 2% 2%;
+          width: 45%; } }
+      @media (min-width: 1200px) {
+        footer ul img {
+          padding: 2% 0 2% 2%;
+          width: 35%; } }
+    @media (min-width: 768px) {
+      footer ul {
+        padding: 2%; } }
+    @media (min-width: 992px) {
+      footer ul {
+        padding: 2%; } }
+    @media (min-width: 1200px) {
+      footer ul {
+        padding: 2%; } }
+    footer ul li {
+      margin: 0 10px; }
+      footer ul li a:link,
+      footer ul li a:visited {
+        color: #FFFBF5;
+        font-size: 1rem; }
+        footer ul li a:link:hover, footer ul li a:link:active,
+        footer ul li a:visited:hover,
+        footer ul li a:visited:active {
+          color: #D7AE75; }
+        @media (min-width: 768px) {
+          footer ul li a:link,
+          footer ul li a:visited {
+            font-size: 1.5rem;
+            margin: 0 15px; } }
+        @media (min-width: 992px) {
+          footer ul li a:link,
+          footer ul li a:visited {
+            font-size: 2rem;
+            margin: 0 25px; } }
 #index-content {
   height: 100%; }
   #index-content #index-title {
     background-color: #FFFBF5;
     height: 30%;
-    text-align: center;
-    padding-bottom: 5%; }
+    padding-bottom: 5%;
+    text-align: center; }
     #index-content #index-title img {
       padding: 10% 0 5% 0;
       width: 90%; }
       @media (min-width: 768px) {
         #index-content #index-title img {
-          width: 80%;
-          padding: 5% 0 2% 0; } }
+          padding: 5% 0 2% 0;
+          width: 80%; } }
       @media (min-width: 992px) {
         #index-content #index-title img {
-          width: 70%;
-          padding: 4% 0 2% 0; } }
+          padding: 4% 0 2% 0;
+          width: 70%; } }
       @media (min-width: 1200px) {
         #index-content #index-title img {
-          width: 70%;
-          padding: 4% 0 2% 0; } }
+          padding: 4% 0 2% 0;
+          width: 70%; } }
     #index-content #index-title p {
       font-size: 1rem;
       line-height: 1.25rem; }
-      @media (min-width: 768px) {
-        #index-content #index-title p {
-          font-size: 1.125rem;
-          line-height: 1.5rem; } }
       @media (min-width: 768px) {
         #index-content #index-title p {
           font-size: 1.25rem;
@@ -525,39 +613,35 @@ textarea {
           grid-template-areas: "order menu visit history";
           grid-template-columns: auto auto auto auto; } }
       #index-content #index-pages > div .order-online {
-        grid-area: order;
         margin: 10%; }
       #index-content #index-pages > div .menu-flavors {
-        grid-area: menu;
         margin: 10%; }
       #index-content #index-pages > div .visit-us {
-        grid-area: visit;
         margin: 10%; }
       #index-content #index-pages > div .our-history {
-        grid-area: history;
         margin: 10%; }
   #index-content #index-footer {
     background-color: #732B2B;
     height: 10%; }
     #index-content #index-footer ul {
-      display: flex;
       align-items: center;
+      display: flex;
       padding: 1%; }
       #index-content #index-footer ul img {
-        width: 75%;
-        padding: 5% 0 5% 5%; }
+        padding: 5% 0 5% 5%;
+        width: 75%; }
         @media (min-width: 768px) {
           #index-content #index-footer ul img {
-            width: 55%;
-            padding: 2% 0 2% 2%; } }
+            padding: 2% 0 2% 2%;
+            width: 55%; } }
         @media (min-width: 992px) {
           #index-content #index-footer ul img {
-            width: 45%;
-            padding: 2% 0 2% 2%; } }
+            padding: 2% 0 2% 2%;
+            width: 45%; } }
         @media (min-width: 1200px) {
           #index-content #index-footer ul img {
-            width: 35%;
-            padding: 2% 0 2% 2%; } }
+            padding: 2% 0 2% 2%;
+            width: 35%; } }
       @media (min-width: 768px) {
         #index-content #index-footer ul {
           padding: 2%; } }
