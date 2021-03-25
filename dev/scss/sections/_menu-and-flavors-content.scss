@@ -1,4 +1,15 @@
 #menu-flavors{
+
+    #about-text{
+        background-color: $light-blue;
+            #about-text-content{
+                @include md{
+                    column-count: 2;
+                    column-gap: 25px;
+                }
+            }
+    }
+
     ul{
         display: grid;
         grid-template-columns: auto auto;
@@ -17,7 +28,6 @@
         "maplewalnut-teaberrygum maplewalnut-teaberrygum";
 
         @include md{
-            // gap: 1.5%;
             grid-template-columns: auto auto auto;
             grid-template-areas: "vanillabean-pistachio franklinmintchip franklinmintchip"
             "vanillabean-pistachio banana-peanutbutter hydroxcookie"
@@ -31,8 +41,6 @@
         }
 
         @include lg{
-            // gap: 2%;
-            // border: red solid 1px;
             grid-template-columns: auto auto auto auto auto;
             grid-template-areas: "vanillabean-pistachio franklinmintchip franklinmintchip hydroxcookie coffee-butterpecan"
             "vanillabean-pistachio banana-peanutbutter blackraspberry-chocolatechip blackraspberry-chocolatechip coffee-butterpecan"
@@ -92,6 +100,14 @@
 
         li:nth-child(13) {
             grid-area: maplewalnut-teaberrygum;
+        }
+    }
+
+    #full-menu{
+        background-color: $light-gold;
+        img{
+            width: 90vw;
+            padding-bottom: 7%;
         }
     }
 }  

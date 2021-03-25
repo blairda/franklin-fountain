@@ -26,6 +26,15 @@ p{
 .body{
     font-size: rem-calc(16);
     line-height: rem-calc(26);
+
+    @include md{
+        font-size: rem-calc(18);
+        line-height: rem-calc(27);
+    }
+
+    @include lg{
+        line-height: rem-calc(28);
+    }
 }
 
 .quote{
@@ -35,8 +44,24 @@ p{
     line-height: rem-calc(28);
     color: $text-blue;
     text-align: center;
+    padding: 8% 0;
+
+    @include md{
+        font-size: rem-calc(25);
+        line-height: rem-calc(35);
+        padding: 6% 0;
+    }
+
+    @include lg{
+        font-size: rem-calc(35);
+        line-height: rem-calc(45);
+        padding: 4% 0;
+    }
 }
 
+/* =============
+    Page Titles Nav
+============= */
 .order-online{
     font-family: 'Miltonian Tattoo', cursive;
     color: $text-teal;
@@ -85,6 +110,9 @@ p{
     }
 }
 
+/* =============
+    Page Title Grid/Link Formatting
+============= */
 .order-online {
     grid-area: order;
 
@@ -138,5 +166,72 @@ p{
         &:active {
             color: $gold;
         }
+    }
+}
+
+/* =============
+    Page Section Titles
+============= */
+.order-online-head{
+    font-family: 'Miltonian Tattoo', cursive;
+    color: $text-teal;
+    font-size: rem-calc(20);
+    padding: 5% 0 3% 0;
+
+    @include md{
+        font-size: rem-calc(30);
+    }
+
+    @include lg{
+        font-size: rem-calc(40);
+        padding: 3% 0 2% 0;
+    }
+}
+
+.menu-flavors-head{
+    font-family: 'Rye', cursive;
+    color: $text-red;
+    font-size: rem-calc(20);
+    padding: 5% 0 3% 0;
+
+    @include md{
+        font-size: rem-calc(30);
+    }
+
+    @include lg{
+        font-size: rem-calc(40);
+        padding: 3% 0 2% 0;
+    }
+}
+
+.visit-us-head{
+    font-family: 'Ewert', cursive;
+    color: $text-green;
+    font-size: rem-calc(20);
+    padding: 5% 0 3% 0;
+
+    @include md{
+        font-size: rem-calc(30);
+    }
+
+    @include lg{
+        font-size: rem-calc(40);
+        padding: 3% 0 2% 0;
+    }
+}
+
+.our-history-head{
+    font-family: 'Sancreek', cursive;
+    color: $text-gold;
+    font-size: rem-calc(20);
+    padding: 5% 0 3% 0;
+
+    @include md{
+        font-size: rem-calc(30);
+    }
+
+    @include lg{
+        font-size: rem-calc(40);
+        padding: 3% 0 2% 0;
     }
 }

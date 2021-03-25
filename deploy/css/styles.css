@@ -348,6 +348,14 @@ a {
   .main-grid > div {
     grid-area: content; }
 
+html, body {
+  min-height: 100%;
+  min-width: 100%; }
+
+.full-height {
+  min-height: 100%;
+  min-width: 100%; }
+
 /* =============
     Typography
 ============= */
@@ -367,15 +375,34 @@ p {
 .body {
   font-size: 1rem;
   line-height: 1.625rem; }
-
+  @media (min-width: 768px) {
+    .body {
+      font-size: 1.125rem;
+      line-height: 1.6875rem; } }
+  @media (min-width: 992px) {
+    .body {
+      line-height: 1.75rem; } }
 .quote {
   font-style: italic;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: #4C779B;
-  text-align: center; }
-
+  text-align: center;
+  padding: 8% 0; }
+  @media (min-width: 768px) {
+    .quote {
+      font-size: 1.5625rem;
+      line-height: 2.1875rem;
+      padding: 6% 0; } }
+  @media (min-width: 992px) {
+    .quote {
+      font-size: 2.1875rem;
+      line-height: 2.8125rem;
+      padding: 4% 0; } }
+/* =============
+    Page Titles Nav
+============= */
 .order-online {
   font-family: 'Miltonian Tattoo', cursive;
   color: #4D807B;
@@ -412,6 +439,9 @@ p {
     .our-history {
       font-size: 3.5rem;
       line-height: 4.5rem; } }
+/* =============
+    Page Title Grid/Link Formatting
+============= */
 .order-online {
   grid-area: order; }
   .order-online a:link,
@@ -452,6 +482,57 @@ p {
     .our-history a:visited:active {
       color: #D7AE75; }
 
+/* =============
+    Page Section Titles
+============= */
+.order-online-head {
+  font-family: 'Miltonian Tattoo', cursive;
+  color: #4D807B;
+  font-size: 1.25rem;
+  padding: 5% 0 3% 0; }
+  @media (min-width: 768px) {
+    .order-online-head {
+      font-size: 1.875rem; } }
+  @media (min-width: 992px) {
+    .order-online-head {
+      font-size: 2.5rem;
+      padding: 3% 0 2% 0; } }
+.menu-flavors-head {
+  font-family: 'Rye', cursive;
+  color: #BD5151;
+  font-size: 1.25rem;
+  padding: 5% 0 3% 0; }
+  @media (min-width: 768px) {
+    .menu-flavors-head {
+      font-size: 1.875rem; } }
+  @media (min-width: 992px) {
+    .menu-flavors-head {
+      font-size: 2.5rem;
+      padding: 3% 0 2% 0; } }
+.visit-us-head {
+  font-family: 'Ewert', cursive;
+  color: #7F9058;
+  font-size: 1.25rem;
+  padding: 5% 0 3% 0; }
+  @media (min-width: 768px) {
+    .visit-us-head {
+      font-size: 1.875rem; } }
+  @media (min-width: 992px) {
+    .visit-us-head {
+      font-size: 2.5rem;
+      padding: 3% 0 2% 0; } }
+.our-history-head {
+  font-family: 'Sancreek', cursive;
+  color: #B38646;
+  font-size: 1.25rem;
+  padding: 5% 0 3% 0; }
+  @media (min-width: 768px) {
+    .our-history-head {
+      font-size: 1.875rem; } }
+  @media (min-width: 992px) {
+    .our-history-head {
+      font-size: 2.5rem;
+      padding: 3% 0 2% 0; } }
 /* =============
     Buttons
 ============= */
@@ -601,13 +682,15 @@ footer {
           font-size: 1.5rem;
           line-height: 2rem; } }
   #index-content #index-pages {
-    height: 60%;
     margin: 8% 0; }
     #index-content #index-pages > div {
       display: grid;
       grid-template-areas: "order menu" "visit history";
       grid-template-columns: auto auto;
       text-align: center; }
+      @media (min-width: 768px) {
+        #index-content #index-pages > div {
+          margin: 10% 0; } }
       @media (min-width: 992px) {
         #index-content #index-pages > div {
           grid-template-areas: "order menu visit history";
@@ -621,8 +704,7 @@ footer {
       #index-content #index-pages > div .our-history {
         margin: 10%; }
   #index-content #index-footer {
-    background-color: #732B2B;
-    height: 10%; }
+    background-color: #732B2B; }
     #index-content #index-footer ul {
       align-items: center;
       display: flex;
@@ -671,6 +753,12 @@ footer {
             #index-content #index-footer ul li a:visited {
               font-size: 2rem;
               margin: 0 25px; } }
+#menu-flavors #about-text {
+  background-color: #F1F9FF; }
+  @media (min-width: 768px) {
+    #menu-flavors #about-text #about-text-content {
+      column-count: 2;
+      column-gap: 25px; } }
 #menu-flavors ul {
   display: grid;
   grid-template-columns: auto auto;
@@ -710,3 +798,9 @@ footer {
     align-self: center; }
   #menu-flavors ul li:nth-child(13) {
     grid-area: maplewalnut-teaberrygum; }
+
+#menu-flavors #full-menu {
+  background-color: #FFFBF5; }
+  #menu-flavors #full-menu img {
+    width: 90vw;
+    padding-bottom: 7%; }

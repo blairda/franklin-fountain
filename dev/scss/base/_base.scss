@@ -20,7 +20,7 @@ a{
     transition: 0.25s;
 }
 
-.main-grid {
+.main-grid{
     display: grid;
     grid-template-areas: ". content .";
     grid-template-columns: 15px auto 15px;
@@ -41,3 +41,31 @@ a{
         grid-area: content;
     }
 }
+
+// html, body{
+//     height: 100%;
+// }
+
+// .full-height{
+//     height: 100%;
+// }
+
+html, body{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.full-height{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+// html, body{
+//     min-height: 97vh;
+//     min-width: 97vw;
+// }
+
+// .full-height{
+//     min-height: 97vh;
+//     min-width: 97vw;
+// }

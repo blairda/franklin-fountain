@@ -44,7 +44,6 @@
     }
 
     #index-pages {
-        height: 60%;
         margin: 8% 0;
 
         >div {
@@ -54,6 +53,10 @@
             grid-template-columns: auto auto;
             text-align: center;
 
+            @include md {
+                margin: 10% 0;
+            }
+
             @include lg {
                 grid-template-areas: "order menu visit history";
                 grid-template-columns: auto auto auto auto;
@@ -62,15 +65,15 @@
             .order-online {
                 margin: 10%;
             }
-    
+
             .menu-flavors {
                 margin: 10%;
             }
-    
+
             .visit-us {
                 margin: 10%;
             }
-    
+
             .our-history {
                 margin: 10%;
             }
@@ -79,7 +82,6 @@
 
     #index-footer {
         background-color: $maroon;
-        height: 10%;
 
         ul {
             align-items: center;
