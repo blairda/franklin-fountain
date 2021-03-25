@@ -2,6 +2,7 @@
 
     #about-text{
         background-color: $light-blue;
+        
             #about-text-content{
                 @include md{
                     column-count: 2;
